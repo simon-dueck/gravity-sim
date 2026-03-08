@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Draw.fs" />
+    <Compile Include="InputState.fs" />
+    <Compile Include="Body.fs" />
+    <Compile Include="AABB.fs" />
+    <Compile Include="Quadtree.fs" />
+    <Compile Include="QuadtreePool.fs" />
+    <Compile Include="Collision.fs" />
+    <Compile Include="Gravity.fs" />
+    <Compile Include="World.fs" />
+    <Compile Include="Simulation.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MIConvexHull" Version="1.1.19.1019" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4.1" />
+  </ItemGroup>
+
+</Project>
